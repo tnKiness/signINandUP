@@ -1,0 +1,290 @@
+/* Dashboard styles generated to match Figma node 1:171 (desktop-first) */
+
+:root {
+    --green: #16a249;
+    --muted: #829b99;
+    --card-bg: #ffffff;
+    --surface: #f3f7f5;
+    --border: #e2ebe7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: var(--surface);
+    color: #1b1b1b
+}
+
+.dash-header {
+    background: transparent;
+    padding: 18px 36px
+}
+
+.dash-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1180px;
+    margin: 0 auto
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.brand-logo {
+    width: 44px;
+    height: 44px
+}
+
+.brand-title {
+    font-weight: 700;
+    font-size: 18px
+}
+
+.brand-sub {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.dash-nav {
+    margin-left: 40px;
+    display: flex;
+    gap: 22px;
+    flex: 1;
+    justify-content: center
+}
+
+.dash-nav a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.dash-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.btn-outline {
+    border: 1px solid #ffdada;
+    background: transparent;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #ff3131
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%
+}
+
+.dashboard {
+    max-width: 1180px;
+    margin: 22px auto;
+    padding: 0 16px
+}
+
+.summary {
+    margin-bottom: 22px
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px
+}
+
+.summary-card {
+    background: var(--card-bg);
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid var(--border)
+}
+
+.summary-card .card-title {
+    font-weight: 600;
+    color: #545454
+}
+
+.summary-card .card-number {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 6px
+}
+
+.summary-card.warning {
+    border-color: #f9e6e6
+}
+
+.summary-card.grow {
+    border-color: #fff5e6
+}
+
+.summary-card.ok {
+    border-color: #e8f7ee
+}
+
+.card-note {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 6px
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 18px
+}
+
+.search {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 46%
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.btn-primary {
+    background: linear-gradient(180deg, #34b269, #78d29e);
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px
+}
+
+.brand-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.brand-card-head {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.brand-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #e9f3ef;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700
+}
+
+.brand-name {
+    font-weight: 600
+}
+
+.brand-status {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.brand-desc {
+    color: var(--muted);
+    font-size: 14px
+}
+
+.brand-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.btn-small {
+    background: #f3f7f5;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px
+}
+
+.progress {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.dash-footer {
+    margin-top: 30px;
+    padding: 28px 0
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 13px
+}
+
+@media (max-width:1024px) {
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (max-width:680px) {
+    .dash-header-inner {
+        padding: 0 12px;
+        flex-wrap: wrap
+    }
+
+    .dash-nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        margin: 10px 0
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px
+    }
+
+    .search {
+        width: 100%
+    }
+}

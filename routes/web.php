@@ -27,3 +27,7 @@ Route::post('/register', function () {
     // Handle registration logic here
     // This will be connected to your authentication controller
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
