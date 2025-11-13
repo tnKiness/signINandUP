@@ -244,6 +244,13 @@ body {
     max-width: 600px;
 }
 
+.signin-link-inline {
+    color: #16a249;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
 /* ============================================
    Form Groups
    ============================================ */
