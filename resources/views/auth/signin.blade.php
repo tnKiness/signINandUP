@@ -10,19 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- ✅ TOP TASKBAR -->
+    <div class="top-taskbar">
+      <div class="taskbar-left">
+        <img
+          src="{{ asset('images/ccf8fd54d8a10b4ab49d514622f1efb57099e1a4.svg') }}"
+          class="taskbar-logo"
+          alt="Logo"
+        />
+        <div class="taskbar-title">
+          <h1>AI Cây Thương Hiệu</h1>
+          <p>By VLBC</p>
+        </div>
+      </div>
+
+      <div class="taskbar-right">
+        <a href="#" class="taskbar-btn login-btn">Đăng nhập</a>
+        <a href="#" class="taskbar-btn signup-btn">Đăng ký</a>
+      </div>
+    </div>
+
     <div class="signin-container">
         <!-- Left Section - Sign In Form -->
         <div class="signin-left">
-            <!-- Header -->
-            <div class="signin-header">
-                <div class="logo">
-                    <img src="{{ asset('images/ccf8fd54d8a10b4ab49d514622f1efb57099e1a4.svg') }}" alt="Logo">
-                </div>
-                <div class="header-title">
-                    <h1>AI Cây Thương Hiệu</h1>
-                    <p class="header-subtitle">By VLBC</p>
-                </div>
-            </div>
 
             <!-- Form Section -->
             <div class="signin-form-section">
@@ -87,7 +97,7 @@
 
                     <!-- Sign Up Link -->
                     <p class="signup-prompt">
-                        Bạn chưa có tài khoản? <a href="#" class="signin-link-inline">Đăng ký</a>
+                        Bạn chưa có tài khoản? <a href="#" class="signup-link-inline">Đăng ký</a>
                     </p>
                 </form>
             </div>
@@ -96,10 +106,6 @@
         <!-- Right Section - Marketing -->
 
         <div class="signin-right">
-            <div class="auth-links">
-                <a href="#" class="signin-link active">Đăng nhập</a> <!-- ready to use animation -->
-                <a href="#" class="signup-link">Đăng ký</a>
-            </div>
             <div class="marketing-content">
                 <h2 class="marketing-title">
                     Sẵn sàng nuôi dưỡng <br><span class="gradient-text">Cây Thương Hiệu</span><br>của bạn?
